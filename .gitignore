@@ -4,3 +4,9 @@ dist/
 .DS_Store
 Data/BR_Municipios_2025/*.shp
 Data/MIS_Ideology_party_data_*.csv
+Data/
+Docs/
+Design/
+Scripts/
+AGENTS.md
+.impeccable.md
