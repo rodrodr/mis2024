@@ -4,10 +4,12 @@ node_modules/
 Data/BR_Municipios_2025/*.shp
 Data/MIS_Ideology_party_data_*.csv
 Data/
-Docs/
+Documents/
 Design/
 Scripts/
 AGENTS.md
 .impeccable.md
 !dist/data/
 !dist/data/**
+!docs/
+!docs/**

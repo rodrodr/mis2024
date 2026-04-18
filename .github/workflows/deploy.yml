@@ -30,7 +30,7 @@ jobs:
       - name: Upload prebuilt artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: dist/
+          path: docs/
 
   deploy:
     environment:
