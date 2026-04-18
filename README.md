@@ -8,23 +8,42 @@ Web interactiva para explorar la geografía ideológica de 5.570 municipios bras
 # Instalar dependencias
 npm install
 
-# Generar datos estáticos (requiere pandas)
-npm run preprocess
-
-# (Opcional) Descargar y simplificar GeoJSON del IBGE
-npm run build:geo
-
 # Desarrollo local
 npm run preview
 
-# Deploy a GitHub Pages (automático en push a main)
-npm run deploy
+# Build de producción para GitHub Pages
+npm run build
 ```
+
+## Publicación
+
+El sitio se publica con la convención clásica de GitHub Pages:
+
+- rama: `main`
+- carpeta publicada: `docs/`
+
+Flujo recomendado:
+
+```bash
+# Generar build estática
+npm run build
+
+# Subir cambios a main
+git add docs src public package.json package-lock.json vite.config.js index.html README.md
+git commit -m "Update published site"
+git push
+```
+
+En GitHub, la configuración de Pages debe ser:
+
+- `Deploy from a branch`
+- branch `main`
+- folder `/docs`
 
 ## Estructura
 
-- `scripts/preprocess.py` — genera JSON estáticos desde los CSVs originales
-- `scripts/build_geo.sh` — descarga GeoJSON del IBGE (requiere `mapshaper`)
+- `docs/` — build estática publicada por GitHub Pages
+- `Documents/` — materiales metodológicos y PDFs de referencia (local, fuera del repo público)
 - `public/data/` — JSON preprocesados para la app
 - `public/geo/` — GeoJSON de Brasil (subido al repo)
 - `src/components/` — componentes Leaflet/D3
