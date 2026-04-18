@@ -34,6 +34,19 @@ git commit -m "Update published site"
 git push
 ```
 
+Atajo recomendado:
+
+```bash
+./publish.sh "Update published site"
+```
+
+Ese script:
+
+- genera el build en `docs/`
+- añade los archivos publicables habituales
+- crea el commit
+- hace push a `origin/main`
+
 En GitHub, la configuración de Pages debe ser:
 
 - `Deploy from a branch`
