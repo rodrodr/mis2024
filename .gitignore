@@ -9,3 +9,5 @@ Design/
 Scripts/
 AGENTS.md
 .impeccable.md
+!dist/data/
+!dist/data/**
