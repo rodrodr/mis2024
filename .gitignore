@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.tmp_pdf_text/
+.DS_Store
+Data/BR_Municipios_2025/*.shp
+Data/MIS_Ideology_party_data_*.csv

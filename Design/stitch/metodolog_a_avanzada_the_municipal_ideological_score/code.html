@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Methodology - The Municipal Ideological Score</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#42493e",
+                        "surface-variant": "#e4e2dd",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#2d5a27",
+                        "secondary-fixed-dim": "#b6c4ff",
+                        "on-primary-fixed-variant": "#23501e",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fbf9f4",
+                        "inverse-primary": "#a1d494",
+                        "outline-variant": "#c2c9bb",
+                        "tertiary-container": "#cea700",
+                        "on-background": "#1b1c19",
+                        "on-secondary-fixed": "#00164f",
+                        "on-secondary-container": "#002474",
+                        "on-primary-fixed": "#002201",
+                        "on-tertiary-fixed": "#231b00",
+                        "on-primary-container": "#9dd090",
+                        "background": "#f4f4f2",
+                        "secondary-fixed": "#dce1ff",
+                        "on-secondary-fixed-variant": "#093cab",
+                        "surface-container": "#f0eee9",
+                        "secondary": "#3056c4",
+                        "primary-fixed-dim": "#a1d494",
+                        "inverse-on-surface": "#f2f1ec",
+                        "surface-container-highest": "#e4e2dd",
+                        "surface-tint": "#3b6934",
+                        "surface-dim": "#dbdad5",
+                        "primary-fixed": "#bcf0ae",
+                        "primary": "#154212",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#eae8e3",
+                        "tertiary-fixed": "#ffe084",
+                        "surface-container-low": "#f5f3ee",
+                        "surface": "#fbf9f4",
+                        "tertiary-fixed-dim": "#eec209",
+                        "outline": "#72796e",
+                        "on-surface": "#1b1c19",
+                        "secondary-container": "#6b8dfe",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#30312e",
+                        "tertiary": "#735c00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Newsreader", "serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body { font-family: 'Newsreader', serif; background-color: #f4f4f2; }
+        .label-text { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#f4f4f2] text-on-surface selection:bg-primary-container selection:text-on-primary-container flex flex-col min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-[#f4f4f2] dark:bg-stone-950 flex justify-between items-center w-full px-8 py-4 max-w-full fixed top-0 z-50 border-b border-surface-container-high">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-serif italic font-bold text-[#154212] dark:text-emerald-500">The Municipal Ideological Score</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-stone-600 dark:text-stone-400 font-sans uppercase tracking-widest text-[10px] hover:text-[#154212] dark:hover:text-emerald-400 transition-colors duration-200" href="#">Patterns</a>
+<a class="text-stone-600 dark:text-stone-400 font-sans uppercase tracking-widest text-[10px] hover:text-[#154212] dark:hover:text-emerald-400 transition-colors duration-200" href="#">Map</a>
+<a class="text-stone-600 dark:text-stone-400 font-sans uppercase tracking-widest text-[10px] hover:text-[#154212] dark:hover:text-emerald-400 transition-colors duration-200" href="#">Municipality</a>
+<a class="text-stone-600 dark:text-stone-400 font-sans uppercase tracking-widest text-[10px] hover:text-[#154212] dark:hover:text-emerald-400 transition-colors duration-200" href="#">Narrative</a>
+<a aria-current="page" class="text-[#154212] dark:text-emerald-500 font-bold border-b border-[#154212] font-serif font-normal tracking-tight Newsreader" href="#">Methodology</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-4 py-2 border border-stone-300 hover:border-[#154212] text-stone-600 hover:text-[#154212] transition-colors duration-200 flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">language</span>
+<span class="font-sans uppercase tracking-widest text-[10px] font-bold">Language</span>
+</button>
+</div>
+</header>
+<main class="flex-grow w-full max-w-screen-xl mx-auto px-6 md:px-16 pt-[120px] pb-24 flex flex-col gap-32">
+<!-- 1. Hero -->
+<section class="max-w-3xl">
+<p class="label-text text-primary uppercase tracking-[0.2em] text-[10px] mb-6 font-bold">Institutional Documentation</p>
+<h1 class="font-serif text-5xl lg:text-7xl text-on-background leading-tight mb-8 font-normal tracking-tight italic">
+                Methodology &amp; Empirical Rigor
+            </h1>
+<p class="font-serif text-xl lg:text-2xl text-on-surface-variant leading-relaxed max-w-prose">
+                The Municipal Ideological Score represents a systematic effort to quantify political sentiment across Brazilian municipalities. This document outlines the scientific foundation, outlining data provenance, bayesian scaling techniques, and the construction of key electoral indicators.
+            </p>
+</section>
+<!-- 2. Sources -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-start">
+<div class="md:col-span-4 sticky top-32">
+<h2 class="font-serif text-3xl font-bold text-on-background mb-4">Data Provenance</h2>
+<div class="w-12 h-1 bg-primary mb-6"></div>
+<p class="label-text text-stone-500 text-[10px] uppercase tracking-widest mb-2 font-bold">Primary Source</p>
+<p class="font-serif text-lg text-on-background font-medium italic">Tribunal Superior Eleitoral (TSE)</p>
+</div>
+<div class="md:col-span-8 bg-surface-container-lowest p-8 md:p-12 border border-surface-container-high">
+<h3 class="font-serif text-2xl font-bold mb-6 text-on-background">Raw Data Acquisition &amp; Cleaning</h3>
+<div class="prose prose-lg text-on-surface font-serif leading-loose max-w-none">
+<p class="mb-6">
+                        Our analysis relies exclusively on raw electoral microdata provided by the TSE. The dataset spans an exhaustive timeframe from <strong class="font-bold text-on-background">1994 to 2026</strong>, capturing decades of municipal electoral cycles.
+                    </p>
+<p>
+                        The cleaning process involves reconciling municipal boundary changes over the 30-year period, standardizing party acronyms (which frequently undergo institutional transformations), and treating missing or annulled votes to ensure a consistent baseline for calculating effective vote shares. Anomalous entries resulting from suspended candidacies are systematically isolated prior to scaling.
+                    </p>
+</div>
+</div>
+</section>
+<!-- 3. Methods -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16 items-start">
+<div class="md:col-span-4 md:col-start-9 md:order-last sticky top-32">
+<h2 class="font-serif text-3xl font-bold text-on-background mb-4">Analytical Models</h2>
+<div class="w-12 h-1 bg-primary mb-6"></div>
+</div>
+<div class="md:col-span-8 md:col-start-1 md:order-first flex flex-col gap-8">
+<!-- Method Card 1 -->
+<div class="bg-surface-container-lowest p-8 md:p-12 border border-surface-container-high border-l-4 border-l-secondary">
+<p class="label-text text-secondary uppercase tracking-widest text-[10px] mb-4 font-bold">Scaling Protocol</p>
+<h3 class="font-serif text-2xl font-bold mb-4 text-on-background">Bayesian Ideology Scaling</h3>
+<p class="font-serif text-lg text-on-surface leading-loose">
+                        To estimate the ideological position of municipalities, we deploy a Bayesian spatial model. By treating party coalitions and mayoral alignments as observable manifestations of underlying latent ideology, the model generates posterior distributions of municipal preferences. This probabilistic approach allows us to quantify uncertainty inherently present in local electoral outcomes.
+                    </p>
+</div>
+<!-- Method Card 2 -->
+<div class="bg-surface-container-highest p-8 md:p-12 border border-surface-container-high">
+<p class="label-text text-tertiary uppercase tracking-widest text-[10px] mb-4 font-bold">Fragmentation Metric</p>
+<h3 class="font-serif text-2xl font-bold mb-4 text-on-background">Effective Number of Parties (NEP)</h3>
+<p class="font-serif text-lg text-on-surface leading-loose">
+                        We calculate the NEP using the Laakso-Taagepera index. This metric moves beyond simply counting active parties, weighting them by their respective vote shares. It provides a robust indicator of the competitive landscape and institutional fragmentation at the municipal level during each electoral cycle.
+                    </p>
+</div>
+</div>
+</section>
+<!-- 4. Variables -->
+<section>
+<div class="mb-12">
+<h2 class="font-serif text-3xl font-bold text-on-background mb-4">Key Indicators Dictionary</h2>
+<div class="w-12 h-1 bg-primary mb-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Var 1 -->
+<div class="bg-surface-container-lowest p-8 border border-surface-container-high h-full flex flex-col">
+<h4 class="label-text text-on-background uppercase tracking-widest text-xs font-bold mb-4 pb-2">Ideological Polarization</h4>
+<p class="font-serif text-on-surface leading-loose flex-grow">
+                        The distance between the ideological estimates of the top two contending coalitions. Higher values indicate severe municipal division along the estimated left-right spatial axis.
+                    </p>
+</div>
+<!-- Var 2 -->
+<div class="bg-surface-container-lowest p-8 border border-surface-container-high h-full flex flex-col">
+<h4 class="label-text text-on-background uppercase tracking-widest text-xs font-bold mb-4 pb-2">Fragmentation Index</h4>
+<p class="font-serif text-on-surface leading-loose flex-grow">
+                        Derived directly from the NEP calculation. It measures the probability that two randomly selected voters in a municipality chose different political parties in the mayoral race.
+                    </p>
+</div>
+<!-- Var 3 -->
+<div class="bg-surface-container-lowest p-8 border border-surface-container-high h-full flex flex-col">
+<h4 class="label-text text-on-background uppercase tracking-widest text-xs font-bold mb-4 pb-2">Electoral Competitiveness</h4>
+<p class="font-serif text-on-surface leading-loose flex-grow">
+                        The inverse of the margin of victory between the first and second-place candidates. Indicates the degree of political contestation and vulnerability of the incumbent coalition.
+                    </p>
+</div>
+</div>
+</section>
+<!-- 5. Academic Record -->
+<section class="bg-surface-container-highest p-12 md:p-24 flex flex-col items-center text-center mt-16 border border-surface-container-high">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">menu_book</span>
+<h2 class="font-serif text-3xl font-bold text-on-background mb-8 italic">The Academic Record</h2>
+<div class="bg-surface-container-lowest p-8 mb-12 max-w-3xl w-full border border-surface-container-high text-left">
+<p class="label-text text-stone-500 text-[10px] uppercase tracking-widest mb-4 font-bold">Original Publication Citation</p>
+<p class="font-serif text-on-surface text-lg leading-loose">
+                    Author(s). (2019). The Municipal Ideological Score: Scaling Brazilian Politics. <em class="italic">Academic Journal of Political Science</em>. 
+                    <a class="text-secondary hover:text-primary transition-colors underline decoration-secondary outline-offset-4" href="#">doi:10.1590/1981-3821201900010001</a>
+</p>
+</div>
+<div class="flex flex-col items-center gap-6">
+<p class="font-serif text-on-surface text-lg">Replication data and source code are maintained in the Harvard Dataverse.</p>
+<a class="inline-flex items-center gap-3 bg-primary text-on-primary px-8 py-4 label-text uppercase tracking-widest text-xs font-bold hover:bg-primary-container transition-colors ease-in-out duration-200" href="#">
+                    Access Harvard Dataverse
+                    <span class="material-symbols-outlined text-lg">open_in_new</span>
+</a>
+<p class="label-text text-stone-500 text-[10px] uppercase tracking-widest mt-2">doi:10.7910/DVN/8USPML</p>
+</div>
+</section>
+</main>
+<!-- Footer Meta-Navigation -->
+<footer class="bg-surface-container-high py-12 px-8 border-t border-surface-variant mt-auto">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="space-y-4 max-w-sm">
+<p class="text-xl font-serif italic font-bold text-primary">The Municipal Ideological Score</p>
+<p class="label-text text-xs text-on-surface-variant leading-relaxed">
+                    A subsidiary of the Archival Research Consortium. Established to provide indisputable empirical records of political movement in the 21st century.
+                </p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-12">
+<div class="space-y-4">
+<p class="label-text text-[10px] uppercase font-bold tracking-[0.2em] text-stone-400">Series</p>
+<ul class="label-text text-xs space-y-2 uppercase tracking-tighter">
+<li><a class="hover:text-primary transition-colors" href="#">The Urban Shift</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Labor &amp; Capital</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Digital Dissent</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<p class="label-text text-[10px] uppercase font-bold tracking-[0.2em] text-stone-400">Institutional</p>
+<ul class="label-text text-xs space-y-2 uppercase tracking-tighter">
+<li><a class="hover:text-primary transition-colors" href="#">Methodology</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Ethics Charter</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Peer Review</a></li>
+</ul>
+</div>
+<div class="hidden lg:block space-y-4">
+<p class="label-text text-[10px] uppercase font-bold tracking-[0.2em] text-stone-400">Connect</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-stone-500 hover:text-primary cursor-pointer" data-icon="alternate_email">alternate_email</span>
+<span class="material-symbols-outlined text-stone-500 hover:text-primary cursor-pointer" data-icon="rss_feed">rss_feed</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-6xl mx-auto mt-24 pt-8 border-t border-surface-variant flex justify-between items-center">
+<p class="label-text text-[10px] uppercase tracking-widest text-stone-400">© 2024 The Municipal Ideological Score. All Rights Reserved.</p>
+<p class="label-text text-[10px] uppercase tracking-widest text-stone-400 italic">Est. MCMXCIX</p>
+</div>
+</footer>
+</body></html>
