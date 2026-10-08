@@ -20,7 +20,7 @@ import { initI18n, getLocale, setLocale, locales, applyI18n, onLocaleChange, t }
 class App {
   constructor() {
     this.currentRoute = null;
-    this.baseTitle = typeof document !== 'undefined' ? document.title : 'Ideología Municipal de Brasil · 1994–2024';
+    this.baseTitle = typeof document !== 'undefined' ? document.title : 'Ideología Municipal de Brasil · 1994–2026';
   }
 
   async init() {

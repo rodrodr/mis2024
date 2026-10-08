@@ -167,7 +167,7 @@ export function createSpatialExplorerPage() {
                     <p class="font-label text-[10px] uppercase tracking-[0.18em] text-outline" data-i18n="common.year">Year</p>
                     <p class="font-headline text-2xl md:text-3xl text-primary" id="electoral-map-current-year">${currentYear}</p>
                   </div>
-                  <input id="electoral-map-timeline" type="range" min="1994" max="2024" step="2" value="${currentYear}" class="w-full atlas-timeline-range atlas-timeline-range-ideo">
+                  <input id="electoral-map-timeline" type="range" min="1994" max="${ELECTION_YEARS[ELECTION_YEARS.length - 1]}" step="2" value="${currentYear}" class="w-full atlas-timeline-range atlas-timeline-range-ideo">
                   <div class="mt-2 flex justify-between gap-2 font-label text-[9px] uppercase tracking-[0.16em] text-outline atlas-timeline-ticks">${tickMarkup}</div>
                 </div>
               </div>

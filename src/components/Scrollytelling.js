@@ -22,7 +22,7 @@ export const CHAPTERS = [
       return {
         component: 'line',
         data: trend,
-        title: 'Score ideológico medio nacional, 1994–2024',
+        title: 'Score ideológico medio nacional, 1994–2026',
         subtitle: 'Media municipal por año electoral',
         width: 620,
         height: 340,
@@ -174,6 +174,32 @@ export const CHAPTERS = [
         labelB: '2024',
         title: 'Cambio ideológico: 2018 → 2024',
         subtitle: '¿Se consolida la polarización?',
+        width: 620,
+        height: 420,
+      };
+    },
+  },
+  {
+    id: 8,
+    theme: 'now',
+    eyebrow: "Elecciones 2026",
+    title: "2026: El nuevo equilibrio legislativo",
+    text: "Los resultados de las elecciones generales de 2026 confirman la resiliencia del centro-derecha en el Congreso Nacional y en los municipios. Con una media municipal de 0.231, el mapa ideológico consolida la fragmentación competitiva bajo la presidencia de Lula y la emergencia de nuevas fuerzas políticas.",
+    source: "Extensión propia (datos 1994–2026)",
+    chartType: 'scatter',
+    chartLoader: async () => {
+      const [m2022, m2026] = await Promise.all([
+        loadMunicipios(2022),
+        loadMunicipios(2026),
+      ]);
+      return {
+        component: 'scatter',
+        dataA: m2022,
+        dataB: m2026,
+        labelA: '2022',
+        labelB: '2026',
+        title: 'Cambio ideológico: 2022 → 2026',
+        subtitle: 'Comparativa de las dos últimas elecciones generales',
         width: 620,
         height: 420,
       };

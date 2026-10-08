@@ -1,4 +1,4 @@
-# Municipal Ideology Explorer — Brasil, 1994–2024
+# Municipal Ideology Explorer — Brasil, 1994–2026
 
 Web interactiva para explorar la geografía ideológica de 5.570 municipios brasileños. Basada en los datos de **Power & Rodrigues-Silveira (2019)**, *Brazilian Political Science Review*, 13(1). https://doi.org/10.1590/1981-3821201900010001
 

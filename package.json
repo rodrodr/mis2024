@@ -1,7 +1,7 @@
 {
   "name": "municipal-ideology",
   "version": "1.0.0",
-  "description": "Interactive explorer of municipal ideological preferences in Brazil, 1994-2024",
+  "description": "Interactive explorer of municipal ideological preferences in Brazil, 1994-2026",
   "type": "module",
   "scripts": {
     "preprocess": "python scripts/preprocess.py",

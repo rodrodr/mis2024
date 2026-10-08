@@ -7,7 +7,7 @@ import { IDEOLOGY_BANDS, loadDashboardNational, loadMunicipios, summarizeMunicip
 import { getLocale, t } from '../i18n/index.js';
 import { bindTooltip } from './chartTooltip.js';
 
-const DEFAULT_YEAR = 2024;
+const DEFAULT_YEAR = 2026;
 let dashboardController = null;
 let dashboardExtremesRequest = 0;
 let dashboardMunicipalSummaryRequest = 0;
@@ -99,7 +99,7 @@ export function createDashboardPage() {
             <div class="xl:col-span-5 grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div class="bg-surface-container-lowest border border-outline-variant/10 p-5 shadow-editorial">
                 <p class="font-label text-[9px] uppercase tracking-[0.18em] text-outline mb-2">${t('dashboard.focusYear')}</p>
-                <p class="font-headline text-3xl" id="dashboard-focus-year">2024</p>
+                <p class="font-headline text-3xl" id="dashboard-focus-year">2026</p>
               </div>
               <div class="bg-surface-container-lowest border border-outline-variant/10 p-5 shadow-editorial">
                 <p class="font-label text-[9px] uppercase tracking-[0.18em] text-outline mb-2">${t('dashboard.coverage')}</p>
@@ -107,7 +107,7 @@ export function createDashboardPage() {
               </div>
               <div class="bg-surface-container-lowest border border-outline-variant/10 p-5 shadow-editorial">
                 <p class="font-label text-[9px] uppercase tracking-[0.18em] text-outline mb-2">${t('dashboard.compareLabel')}</p>
-                <p class="font-headline text-3xl" id="dashboard-compare-year">2016</p>
+                <p class="font-headline text-3xl" id="dashboard-compare-year">2022</p>
               </div>
             </div>
           </div>
@@ -118,8 +118,8 @@ export function createDashboardPage() {
             <div class="flex-1">
               <p class="font-label text-[9px] uppercase tracking-[0.18em] text-outline mb-2">${t('dashboard.timelineControl')}</p>
               <div class="flex items-center gap-4">
-                <input id="dashboard-year-slider" type="range" min="1994" max="2024" step="2" value="2024" class="w-full">
-                <span class="font-label text-[11px] uppercase tracking-[0.16em] font-bold min-w-[3rem] text-right" id="dashboard-year-label">2024</span>
+                <input id="dashboard-year-slider" type="range" min="1994" max="2026" step="2" value="2026" class="w-full">
+                <span class="font-label text-[11px] uppercase tracking-[0.16em] font-bold min-w-[3rem] text-right" id="dashboard-year-label">2026</span>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 min-w-[320px]">

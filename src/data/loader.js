@@ -89,7 +89,7 @@ export function indexMunicipiosByGeocodig(municipios) {
 }
 
 // Available election years in the dataset
-export const ELECTION_YEARS = [1994, 1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2024];
+export const ELECTION_YEARS = [1994, 1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2024, 2026];
 
 // Brazilian states
 export const STATES = [
